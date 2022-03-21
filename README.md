@@ -10,7 +10,7 @@ You should consider using ros-noetic as it is the new ros LTS.
 
 
 ## Installing ROS
-###Installation
+### Installation
 
 [Original tuto](https://roboticsbackend.com/install-ros-on-raspberry-pi-3/#Which_Operating_System_for_ROS_on_Raspberry_Pi)
 
