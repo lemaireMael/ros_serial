@@ -1,5 +1,5 @@
-# ros_serial
-Serial communication between an arduino and a raspberry using ROS
+# ROS serial
+Serial communication between an arduino and a raspberry using ROS from scratch.
 
 **Arduino codes come from ROS wiki.**
 
@@ -82,6 +82,38 @@ Just finish by sourcing devel directory :
 ```
 $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
+
+## Setting up Arduino IDE
+
+[Arduino IDE setup](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
+
+Start by dowloading rosserial packages
+
+```
+$ sudo apt-get install ros-melodic-rosserial-arduino
+$ sudo apt-get install ros-melodic-rosserial
+```
+On the original link above, they talk about another way to install those packages, which I strongly advise not to do. WHen I tried to do it, the raspberry was just crashing. It must come froma lack a memory on the raspberry 3 B+, may be it can work on a raspberry pi 4. However, the method we used work just fine.
+
+We have to make sure ros_lib is not present to avoid any error.
+```
+cd <sketchbook>/libraries
+rm -rf ros_lib
+rosrun rosserial_arduino make_libraries.py .
+```
+```<sketchbook>``` is the path to your directory where your sketches are. In my case it's directly ```~/sketchbook/``` but it can also be : ```~/Arduino/libraries```
+
+You can now restart your IDE.
+
+## Arduino publisher node
+
+http://wiki.ros.org/rosserial_arduino/Tutorials/Hello%20World
+
+## Arduino subscriber
+
+http://wiki.ros.org/rosserial/Overview/Publishers%20and%20Subscribers
+
+
 
 
 
