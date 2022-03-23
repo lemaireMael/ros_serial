@@ -6,7 +6,7 @@ Serial communication between an arduino and a raspberry using ROS from scratch.
 ## Config
 I'm currently using a raspberry pi 3 B+, running on ubuntu mate 18.04 ([Ubuntu Mate 18.04 disk image](https://releases.ubuntu-mate.org/archived/18.04/arm64/)) and ROS distro is ros-melodic.
 
-You should consider using ros-noetic as it is the new ros LTS.
+You should consider using ros-noetic as it is the new ros LTS (needs Ubuntu 20.04).
 
 
 ## Installing ROS
