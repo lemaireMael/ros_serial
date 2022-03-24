@@ -8,6 +8,8 @@ I'm currently using a raspberry pi 3 B+, running on ubuntu mate 18.04 ([Ubuntu M
 
 You should consider using ros-noetic as it is the new ros LTS (needs Ubuntu 20.04).
 
+https://forum.arduino.cc/t/installing-arduino-sam-boards-on-arduino-ide-for-arm64/550398
+
 
 ## Installing ROS
 ### Installation
